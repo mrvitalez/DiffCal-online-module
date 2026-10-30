@@ -1,0 +1,77 @@
+<section class="ch accent" id="objectives">
+<h2><span class="num">🧮</span>What you will learn</h2>
+<p class="lead">By the end of this module, you can:</p>
+<ul class="checks"><li>Differentiate polynomials and powers (including roots and reciprocals) with the Constant, Power, Constant Multiple and Sum Rules.</li><li>Apply the Product and Quotient Rules correctly, and choose when simplifying first is easier.</li><li>Find equations of tangent lines and normal lines to a curve.</li><li>Evaluate limits using lim (sin θ)/θ = 1 and lim (cos θ − 1)/θ = 0.</li><li>Differentiate expressions involving all six trigonometric functions and locate horizontal tangents.</li></ul>
+<div class="callout"><span class="label">How to use this module</span>
+(1) Read each section with pen and paper. (2) Try every worked example before opening its solution. (3) Watch the lecture video and answer its questions. (4) Answer the activity, write your solutions, and submit. Your score is recorded for your instructor. For the full treatment, read §2.3, §2.4 of Stewart, <em>Calculus</em>, 8th edition.</div>
+</section>
+<section class="ch" id="s1"><h2><span class="num">2.3</span>Differentiation Formulas</h2><p>In Module 3 every derivative took a page of limit algebra. Stewart §2.3 replaces that work with a handful of rules, each proved once from the definition and then used forever. Learn them well: everything else in this course rests on them.</p>
+<div class="callout blue"><span class="label">Basic rules</span> For a constant \(c\) and differentiable \(f, g\):
+<ul>
+<li><strong>Constant:</strong> \(\dfrac{d}{dx}(c) = 0\) (a horizontal line has slope 0).</li>
+<li><strong>Power Rule:</strong> \(\dfrac{d}{dx}(x^n) = nx^{n-1}\) for every real number \(n\).</li>
+<li><strong>Constant Multiple:</strong> \(\dfrac{d}{dx}[cf(x)] = c\,f'(x)\).</li>
+<li><strong>Sum and Difference:</strong> \(\dfrac{d}{dx}[f(x) \pm g(x)] = f'(x) \pm g'(x)\).</li>
+</ul></div>
+<p>Together these let you differentiate any polynomial term by term: \(\dfrac{d}{dx}(2x^5 - 7x^2 + 4x - 9) = 10x^4 - 14x + 4\). The Power Rule also works for negative and fractional powers, so <strong>rewrite roots and reciprocals as powers first</strong>: \(\dfrac{1}{x^3} = x^{-3}\) has derivative \(-3x^{-4}\), and \(\sqrt{x} = x^{1/2}\) has derivative \(\tfrac12 x^{-1/2} = \dfrac{1}{2\sqrt x}\). Compare that with the long limit you needed in Module 3.</p>
+<div class="callout blue"><span class="label">Product and Quotient Rules</span>
+\[\frac{d}{dx}[f g] = f\,g' + g\,f', \qquad \frac{d}{dx}\left[\frac{f}{g}\right] = \frac{g\,f' - f\,g'}{g^2}.\]</div>
+<p>A memory aid for the quotient: “low d-high minus high d-low, over low squared.” The order in the numerator matters because of the minus sign.</p>
+<p>For example, with the Product Rule,
+\[\frac{d}{dx}\big[(x^2 + 1)(3x - 4)\big] = (x^2 + 1)(3) + (3x - 4)(2x) = 9x^2 - 8x + 3,\]
+which you can confirm by expanding first. With the Quotient Rule,
+\[\frac{d}{dx}\left[\frac{x}{x^2 + 4}\right] = \frac{(x^2 + 4)(1) - x(2x)}{(x^2 + 4)^2} = \frac{4 - x^2}{(x^2 + 4)^2}.\]
+Do not use the Quotient Rule when a simple rewrite works: \(\dfrac{3x^2 + \sqrt{x}}{x} = 3x + x^{-1/2}\) is quicker by the Power Rule.</p>
+<p><strong>Why two terms in the Product Rule?</strong> Picture a rectangle with sides \(f(x)\) and \(g(x)\), so its area is \(fg\). When \(x\) grows a little, both sides grow. The area gains a strip along one side, about \(f\,\Delta g\), and a strip along the other, about \(g\,\Delta f\), plus a tiny corner piece \(\Delta f\,\Delta g\) that becomes negligible. Dividing by \(\Delta x\) and letting \(\Delta x \to 0\) leaves exactly \(f g' + g f'\). One change on each side gives one term each.</p>
+<p><strong>Tangent and normal lines.</strong> At a point \((a, f(a))\), the tangent line has slope \(m = f'(a)\). The <strong>normal line</strong> is the line through the same point that is <em>perpendicular</em> to the tangent, so its slope is \(-1/m\) (when \(m \ne 0\)). If \(m = 0\), the tangent is horizontal and the normal is the vertical line \(x = a\).</p>
+<div class="callout warn"><span class="label">Common mistake</span> The derivative of a product is <em>not</em> the product of the derivatives: \((fg)' \ne f'g'\). Test it with \(f = g = x\): \((x^2)' = 2x\), but \(f'g' = 1\). The same goes for quotients.</div><div class="callout blue"><span class="label">Key equations</span><div class="eq">\[ \frac{d}{dx}(x^n) = nx^{n-1} \]</div><div class="eq">\[ (fg)' = f g' + g f' \]</div><div class="eq">\[ \left(\frac{f}{g}\right)' = \frac{g f' - f g'}{g^2} \]</div></div><figure><img src="https://raw.githubusercontent.com/mrvitalez/DiffCal-online-module/main/img/fig-04-1.png" alt="A curve that rises from the origin to a peak near x = 1.4 and then falls slowly. At the point (1, 1) a gently sloping tangent line touches it, and a steep falling normal line crosses it at a right angle." loading="lazy"><figcaption>Figure 4.1 The tangent line (slope 1/3) and the normal line (slope −3) to y = 3x/(x² + 2) at the point (1, 1). The two lines are perpendicular.</figcaption></figure></section><section class="ch" id="s2"><h2><span class="num">2.4</span>Derivatives of Trigonometric Functions</h2><p>Before you can differentiate \(\sin x\), you need two limits about angles. In calculus, angles are always measured in <strong>radians</strong>; the formulas below are false in degrees.</p>
+<div class="callout blue"><span class="label">Two key limits</span>
+\[\lim_{\theta \to 0} \frac{\sin\theta}{\theta} = 1, \qquad \lim_{\theta \to 0} \frac{\cos\theta - 1}{\theta} = 0.\]</div>
+<p>Why is the first one true? On the unit circle, an angle \(\theta\) cuts off an arc of length \(\theta\) and a vertical segment of height \(\sin\theta\). For small angles the arc and the segment are almost the same length, so their ratio approaches 1. Stewart §2.4 makes this precise with a Squeeze Theorem argument comparing areas, and Figure 4.2 shows the graph of \(\sin\theta/\theta\) heading to 1. The second limit follows from the first by multiplying by \(\cos\theta + 1\) over itself.</p>
+<p>These limits handle variations too. Since \(2x \to 0\) as \(x \to 0\),
+\[\lim_{x \to 0} \frac{\sin 2x}{7x} = \frac{2}{7}\lim_{x \to 0}\frac{\sin 2x}{2x} = \frac{2}{7}\cdot 1 = \frac{2}{7}.\]
+The trick is to make the denominator match the angle inside the sine.</p>
+<p><strong>The derivative of sine.</strong> Using \(\sin(x + h) = \sin x\cos h + \cos x\sin h\),
+\[\frac{\sin(x + h) - \sin x}{h} = \sin x\cdot\frac{\cos h - 1}{h} + \cos x\cdot\frac{\sin h}{h} \;\to\; \sin x\cdot 0 + \cos x\cdot 1.\]
+So \(\dfrac{d}{dx}(\sin x) = \cos x\). A similar argument gives \(\dfrac{d}{dx}(\cos x) = -\sin x\). The other four follow from the Quotient Rule, for example
+\[\frac{d}{dx}(\tan x) = \frac{d}{dx}\left(\frac{\sin x}{\cos x}\right) = \frac{\cos x\cos x - \sin x(-\sin x)}{\cos^2 x} = \frac{1}{\cos^2 x} = \sec^2 x.\]</p>
+<table>
+<tr><th>Function</th><th>Derivative</th><th>Function</th><th>Derivative</th></tr>
+<tr><td>\(\sin x\)</td><td>\(\cos x\)</td><td>\(\csc x\)</td><td>\(-\csc x\cot x\)</td></tr>
+<tr><td>\(\cos x\)</td><td>\(-\sin x\)</td><td>\(\sec x\)</td><td>\(\sec x\tan x\)</td></tr>
+<tr><td>\(\tan x\)</td><td>\(\sec^2 x\)</td><td>\(\cot x\)</td><td>\(-\csc^2 x\)</td></tr>
+</table>
+<p>A pattern helps you remember the signs: the derivatives of the “co” functions (cosine, cosecant, cotangent) all carry a minus sign.</p>
+<p>Combine the table with the rules of §2.3. For instance \(\dfrac{d}{dx}(x\cos x) = \cos x - x\sin x\) by the Product Rule, and \(\dfrac{d}{dx}(3\tan x - 2\sec x) = 3\sec^2 x - 2\sec x\tan x\) by the Sum and Constant Multiple Rules.</p>
+<p><strong>Repeating pattern.</strong> Differentiating \(\sin x\) again and again gives \(\cos x,\ -\sin x,\ -\cos x,\ \sin x\), and then the cycle repeats every four steps. This is useful for motion that goes back and forth. If a mass on a spring has position \(s(t) = 4\sin t\) cm, its velocity is \(v = 4\cos t\) and its acceleration is \(a = -4\sin t = -s\). The acceleration always points back toward the rest position, which is exactly why the mass keeps oscillating. Figure 4.3 shows how the graph of \(\cos x\) records the slopes of \(\sin x\).</p>
+<div class="callout warn"><span class="label">Common mistake</span> \(\dfrac{\sin 2x}{x}\) does not tend to 1, and you cannot cancel the \(x\) out of \(\sin 2x\). The limit \(\sin\theta/\theta \to 1\) needs the <em>same</em> quantity in the sine and the denominator.</div><div class="callout blue"><span class="label">Key equations</span><div class="eq">\[ \lim_{\theta \to 0} \frac{\sin\theta}{\theta} = 1 \]</div><div class="eq">\[ \frac{d}{dx}(\sin x) = \cos x, \quad \frac{d}{dx}(\cos x) = -\sin x \]</div><div class="eq">\[ \frac{d}{dx}(\tan x) = \sec^2 x \]</div></div><figure><img src="https://raw.githubusercontent.com/mrvitalez/DiffCal-online-module/main/img/fig-04-2.png" alt="A wave-shaped curve that is symmetric about the vertical axis, reaching up toward height 1 at theta = 0, where a dot marks the limiting value 1." loading="lazy"><figcaption>Figure 4.2 The graph of y = (sin θ)/θ with θ in radians. The function is undefined at θ = 0, but its values approach 1 from both sides (the marked point is the limit, not a value of the function).</figcaption></figure><figure><img src="https://raw.githubusercontent.com/mrvitalez/DiffCal-online-module/main/img/fig-04-3.png" alt="A sine curve and a dashed cosine curve from 0 to 2 pi. The cosine curve crosses zero exactly where the sine curve reaches its top and bottom." loading="lazy"><figcaption>Figure 4.3 y = sin x (solid) and its derivative y = cos x (dashed). Where sin x has a peak or valley, cos x is zero; where sin x climbs most steeply (at x = 0 and 2π), cos x equals 1.</figcaption></figure></section>
+<section class="ch accent" id="takeaways">
+<h2><span class="num">★</span>Key takeaways</h2>
+<ul class="checks"><li>Rewrite roots and reciprocals as powers, then use the Power Rule d/dx(xⁿ) = nxⁿ⁻¹ term by term.</li><li>The Product Rule is (fg)′ = fg′ + gf′ and the Quotient Rule is (f/g)′ = (gf′ − fg′)/g²; neither is the product or quotient of derivatives.</li><li>The normal line at a point is perpendicular to the tangent line, with slope −1/f′(a).</li><li>With θ in radians, (sin θ)/θ → 1 and (cos θ − 1)/θ → 0 as θ → 0; these give (sin x)′ = cos x and (cos x)′ = −sin x.</li><li>The other trig derivatives come from the Quotient Rule; the "co" functions all have a minus sign.</li></ul>
+</section>
+
+<section class="ch" id="examples">
+<h2><span class="num">⟡</span>Worked examples</h2>
+<p class="lead">Try each example yourself first, then open the solution and compare your steps.</p>
+<div class="prob"><div class="head"><span class="n">Example 4.1</span>
+<span class="t">Power Rule with roots and reciprocals</span></div>
+<div class="body"><p>Differentiate \(y = 4x^5 - \dfrac{3}{x^2} + 6\sqrt{x}\).</p> <small class="muted">(Similar to Stewart §2.3, Power Rule)</small></div>
+<details class="ans"><summary>Show solution <small>(try it first)</small></summary>
+<div class="a"><p><strong>Strategy:</strong></p><p>Rewrite every term as a constant times a power of \(x\), then use the Power, Constant Multiple and Sum rules term by term.</p><p><strong>Solution:</strong></p><p>Rewrite: \(y = 4x^5 - 3x^{-2} + 6x^{1/2}\). Differentiate each term:
+\[y' = 4(5x^4) - 3(-2x^{-3}) + 6\left(\tfrac12 x^{-1/2}\right) = 20x^4 + 6x^{-3} + 3x^{-1/2}.\]
+In root form: \(y' = 20x^4 + \dfrac{6}{x^3} + \dfrac{3}{\sqrt{x}}\).</p><p><strong>Check:</strong></p><p>Watch the signs: \(-3\) times \(-2\) is \(+6\). The power drops by one each time: \(-2 - 1 = -3\) and \(\tfrac12 - 1 = -\tfrac12\). A common slip is writing \(x^{-1}\) for the derivative of \(x^{-2}\).</p></div></details></div><div class="prob"><div class="head"><span class="n">Example 4.2</span>
+<span class="t">Tangent and normal lines with the Quotient Rule</span></div>
+<div class="body"><p>Find the equations of the tangent line and the normal line to \(y = \dfrac{3x}{x^2 + 2}\) at the point \((1, 1)\).</p> <small class="muted">(Similar to Stewart §2.3, normal lines)</small></div>
+<details class="ans"><summary>Show solution <small>(try it first)</small></summary>
+<div class="a"><p><strong>Strategy:</strong></p><p>Find \(y'\) with the Quotient Rule, evaluate at \(x = 1\) to get the tangent slope \(m\), then use slope \(-1/m\) for the normal line. Both lines pass through \((1, 1)\).</p><p><strong>Solution:</strong></p><p>With top \(3x\) and bottom \(x^2 + 2\):
+\[y' = \frac{(x^2 + 2)(3) - 3x(2x)}{(x^2 + 2)^2} = \frac{3x^2 + 6 - 6x^2}{(x^2 + 2)^2} = \frac{6 - 3x^2}{(x^2 + 2)^2}.\]
+At \(x = 1\): \(m = \dfrac{6 - 3}{9} = \dfrac13\).</p>
+<p>Tangent: \(y - 1 = \tfrac13(x - 1)\), so \(y = \tfrac13 x + \tfrac23\).</p>
+<p>Normal: slope \(-1/(1/3) = -3\), so \(y - 1 = -3(x - 1)\), that is, \(y = -3x + 4\).</p><p><strong>Check:</strong></p><p>Both lines give \(y = 1\) at \(x = 1\), and the product of the slopes is \(\tfrac13\cdot(-3) = -1\), so they are perpendicular. Figure 4.1 shows the picture.</p></div></details></div><div class="prob"><div class="head"><span class="n">Example 4.3</span>
+<span class="t">Horizontal tangents of a trigonometric quotient</span></div>
+<div class="body"><p>Let \(f(x) = \dfrac{\sin x}{2 + \cos x}\). Find \(f'(x)\) and all \(x\) in \([0, 2\pi]\) where the graph of \(f\) has a horizontal tangent.</p> <small class="muted">(Similar to Stewart §2.4, horizontal tangents)</small></div>
+<details class="ans"><summary>Show solution <small>(try it first)</small></summary>
+<div class="a"><p><strong>Strategy:</strong></p><p>Use the Quotient Rule with the trig derivatives, simplify with \(\sin^2 x + \cos^2 x = 1\), then solve \(f'(x) = 0\). A fraction is zero exactly when its numerator is zero (and its denominator is not).</p><p><strong>Solution:</strong></p><p>\[f'(x) = \frac{(2 + \cos x)(\cos x) - (\sin x)(-\sin x)}{(2 + \cos x)^2} = \frac{2\cos x + \cos^2 x + \sin^2 x}{(2 + \cos x)^2} = \frac{2\cos x + 1}{(2 + \cos x)^2}.\]
+The denominator is never zero, because \(2 + \cos x \ge 1\). So \(f'(x) = 0\) when \(2\cos x + 1 = 0\), that is, \(\cos x = -\tfrac12\).</p>
+<p>In \([0, 2\pi]\) this happens at \(x = \dfrac{2\pi}{3}\) and \(x = \dfrac{4\pi}{3}\). The points are \(\left(\tfrac{2\pi}{3}, \tfrac{\sqrt3}{3}\right)\) and \(\left(\tfrac{4\pi}{3}, -\tfrac{\sqrt3}{3}\right)\), since \(f\left(\tfrac{2\pi}{3}\right) = \dfrac{\sqrt3/2}{3/2} = \dfrac{\sqrt3}{3}\).</p><p><strong>Check:</strong></p><p>At \(x = 0\), \(f'(0) = 3/9 = 1/3 \gt  0\), and at \(x = \pi\), \(f'(\pi) = -1/1 = -1 \lt  0\). So \(f'\) changes sign between them, consistent with a zero at \(2\pi/3\).</p></div></details></div>
+</section>

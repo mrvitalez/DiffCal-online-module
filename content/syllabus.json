@@ -1,0 +1,141 @@
+{
+ "source": "'25 - '26 - CAL01 (Course Syllabus)",
+ "courseInfo": [
+  [
+   "Course code",
+   "CAL01"
+  ],
+  [
+   "Course title",
+   "Differential Calculus"
+  ],
+  [
+   "Credit units",
+   "3 units"
+  ],
+  [
+   "Contact hours",
+   "3 hours lecture"
+  ],
+  [
+   "Pre-requisite",
+   "CAL00: Pre-Calculus"
+  ],
+  [
+   "Co-requisite",
+   "None"
+  ],
+  [
+   "Semester",
+   "Second Semester, AY 2026-2027"
+  ],
+  [
+   "Instructor",
+   "Instr. Ryan M. Vitalez, LPT"
+  ]
+ ],
+ "description": "This course is focused on introducing concepts the students should know about Calculus; the branch of Mathematics concerned with the calculation of instantaneous rates of change and the summation of infinitely many small factors to determine some whole. Particularly, the concepts of limits, differentiation, and their applications will be discussed with precision. Such that the students will be able to apply the concepts and theories they will learn in the field of astronomy. The course will also try to incorporate real life applications in research and technology of the topics to explore their utility not just in their course exams but also in life. Multiple readings of the material in advance are highly expected from the students.",
+ "requirements": [
+  "Long Examinations",
+  "Written Works",
+  "Recitation Card"
+ ],
+ "grading": [
+  {
+   "component": "Long Examinations",
+   "weight": "40%",
+   "items": [
+    "Long Examination 1",
+    "Long Examination 2",
+    "Long Examination 3"
+   ]
+  },
+  {
+   "component": "Recitation",
+   "weight": "20%",
+   "items": []
+  },
+  {
+   "component": "Written Works",
+   "weight": "30%",
+   "items": [
+    "Quizzes",
+    "Activities",
+    "Problem Sets"
+   ]
+  },
+  {
+   "component": "Attendance",
+   "weight": "10%",
+   "items": []
+  }
+ ],
+ "transmutation": [
+  [
+   "97% to 100%",
+   "1.00"
+  ],
+  [
+   "93% to 96.99%",
+   "1.25"
+  ],
+  [
+   "89% to 92.99%",
+   "1.50"
+  ],
+  [
+   "85% to 88.99%",
+   "1.75"
+  ],
+  [
+   "81% to 84.99%",
+   "2.00"
+  ],
+  [
+   "77% to 80.99%",
+   "2.25"
+  ],
+  [
+   "73% to 76.99%",
+   "2.50"
+  ],
+  [
+   "69% to 72.99%",
+   "2.75"
+  ],
+  [
+   "65% to 68.99%",
+   "3.00"
+  ],
+  [
+   "64% to 64.99%",
+   "4.00"
+  ],
+  [
+   "63.99% and below",
+   "5.00"
+  ]
+ ],
+ "references": [
+  "Stewart, J. (2016). <em>Calculus</em>, 8th ed. Cengage Learning.",
+  "Love, C. E., &amp; Rainville, E. D. (1969). <em>Differential and Integral Calculus</em>, 6th ed. The Macmillan Company."
+ ],
+ "videoCredit": "Lecture videos in the modules: Khan Academy; MIT OpenCourseWare, 18.01 Single Variable Calculus, Fall 2006. MIT OpenCourseWare videos are licensed CC BY-NC-SA 4.0 and Khan Academy videos CC BY-NC-SA 3.0 US. Each video is cited on its module page.",
+ "consultation": [
+  {
+   "day": "Monday",
+   "time": "10:30 AM to 12:00 NN",
+   "room": "RnD AS611"
+  },
+  {
+   "day": "Tuesday",
+   "time": "5:30 PM to 7:30 PM",
+   "room": "RnD AS611"
+  },
+  {
+   "day": "Thursday",
+   "time": "4:30 PM to 6:00 PM",
+   "room": "RnD AS611"
+  }
+ ]
+}

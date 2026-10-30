@@ -1,0 +1,1707 @@
+{
+ "course": "CAL01",
+ "courseTitle": "Differential Calculus",
+ "instructor": "Instr. Ryan M. Vitalez, LPT",
+ "university": "Rizal Technological University",
+ "department": "Department of Earth and Space Sciences",
+ "program": "Bachelor of Science in Astronomy",
+ "logo": "https://raw.githubusercontent.com/mrvitalez/DiffCal-online-module/main/img/rtu-logo.jpg",
+ "parts": [
+  {
+   "title": "Part I · Functions and Limits",
+   "span": "Modules 1-2",
+   "blurb": "Representing functions, a catalog of essential functions, the limit of a function, and continuity.",
+   "modules": [
+    1,
+    2
+   ],
+   "problemSet": 1
+  },
+  {
+   "title": "Part II · Derivatives, Part I",
+   "span": "Modules 3-4",
+   "blurb": "Derivatives as rates of change and as functions, the differentiation formulas, and trigonometric derivatives.",
+   "modules": [
+    3,
+    4
+   ],
+   "problemSet": 2
+  },
+  {
+   "title": "Part III · Derivatives, Part II",
+   "span": "Modules 5-6",
+   "blurb": "The chain rule, implicit differentiation, rates of change in the sciences, related rates, and linear approximations.",
+   "modules": [
+    5,
+    6
+   ],
+   "problemSet": 3
+  },
+  {
+   "title": "Part IV · Applications of Differentiation, Part I",
+   "span": "Modules 7-8",
+   "blurb": "Maximum and minimum values, the Mean Value Theorem, the shape of a graph, and limits at infinity.",
+   "modules": [
+    7,
+    8
+   ],
+   "problemSet": 4
+  },
+  {
+   "title": "Part V · Applications of Differentiation, Part II",
+   "span": "Modules 9-10",
+   "blurb": "Curve sketching, optimization problems, Newton's method, and antiderivatives.",
+   "modules": [
+    9,
+    10
+   ],
+   "problemSet": 5
+  },
+  {
+   "title": "Part VI · Inverse Functions, Part I",
+   "span": "Modules 11-12",
+   "blurb": "Inverse functions, exponential functions, logarithmic functions, and their derivatives.",
+   "modules": [
+    11,
+    12
+   ],
+   "problemSet": 6
+  },
+  {
+   "title": "Part VII · Inverse Functions, Part II",
+   "span": "Modules 13-14",
+   "blurb": "Exponential growth and decay, inverse trigonometric and hyperbolic functions, and l'Hospital's Rule.",
+   "modules": [
+    13,
+    14
+   ],
+   "problemSet": 7
+  }
+ ],
+ "problemSets": [
+  {
+   "n": 1,
+   "title": "Problem Set 1: Functions and Limits",
+   "modules": [
+    1,
+    2
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Problem Set 2: Derivatives, Part I",
+   "modules": [
+    3,
+    4
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Problem Set 3: Derivatives, Part II",
+   "modules": [
+    5,
+    6
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Problem Set 4: Applications of Differentiation, Part I",
+   "modules": [
+    7,
+    8
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Problem Set 5: Applications of Differentiation, Part II",
+   "modules": [
+    9,
+    10
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Problem Set 6: Inverse Functions, Part I",
+   "modules": [
+    11,
+    12
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Problem Set 7: Inverse Functions, Part II",
+   "modules": [
+    13,
+    14
+   ]
+  }
+ ],
+ "modules": [
+  {
+   "n": 1,
+   "title": "Functions and Models",
+   "tab": "M01 Functions and Models",
+   "icon": "📈",
+   "optional": false,
+   "overview": "Every idea in calculus is about functions. This module reviews how functions are represented, builds a catalog of the essential functions and their graphs, and shows how to make new functions by transforming, combining and composing old ones.",
+   "topics": [
+    "Four Ways to Represent a Function",
+    "Mathematical Models: A Catalog of Essential Functions",
+    "New Functions from Old Functions"
+   ],
+   "sections": [
+    [
+     "1.1",
+     "Four Ways to Represent a Function"
+    ],
+    [
+     "1.2",
+     "Mathematical Models: A Catalog of Essential Functions"
+    ],
+    [
+     "1.3",
+     "New Functions from Old Functions"
+    ]
+   ],
+   "items": [
+    {
+     "id": "q1",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q2",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q3",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q4",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -2,
+       2
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q5",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       3.2,
+       9
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q6",
+     "type": "numeric",
+     "unit": "pesos",
+     "choices": 0
+    },
+    {
+     "id": "q7",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x",
+      "h"
+     ],
+     "domain": {
+      "x": [
+       -2,
+       2
+      ],
+      "h": [
+       0.1,
+       1
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q8",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "reflection",
+     "type": "text",
+     "unit": "",
+     "choices": 0
+    }
+   ],
+   "activityTitle": "Activity 1: Function Toolkit"
+  },
+  {
+   "n": 2,
+   "title": "Limits and Continuity",
+   "tab": "M02 Limits and Continuity",
+   "icon": "🎯",
+   "optional": false,
+   "overview": "Limits are the foundation of calculus. Starting from tangent lines and velocities, you will learn what a limit means, how to compute limits with the Limit Laws and algebra, how to state a limit precisely with ε and δ, and what it means for a function to be continuous.",
+   "topics": [
+    "The Tangent and Velocity Problem",
+    "The Limit of a Function",
+    "Calculating Limits Using the Limit Laws",
+    "The Precise Definition of a Limit",
+    "Continuity"
+   ],
+   "sections": [
+    [
+     "1.4",
+     "The Tangent and Velocity Problems"
+    ],
+    [
+     "1.5",
+     "The Limit of a Function"
+    ],
+    [
+     "1.6",
+     "Calculating Limits Using the Limit Laws"
+    ],
+    [
+     "1.7",
+     "The Precise Definition of a Limit"
+    ],
+    [
+     "1.8",
+     "Continuity"
+    ]
+   ],
+   "items": [
+    {
+     "id": "q1",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q2",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "h"
+     ],
+     "domain": {
+      "h": [
+       0.1,
+       2
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q3",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q4",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q5",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       0.5,
+       3
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q6",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -3,
+       3
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q7",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q8",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "reflection",
+     "type": "text",
+     "unit": "",
+     "choices": 0
+    }
+   ],
+   "activityTitle": "Activity 2: Closing In"
+  },
+  {
+   "n": 3,
+   "title": "Derivatives and Rates of Change",
+   "tab": "M03 Derivatives",
+   "icon": "📈",
+   "optional": false,
+   "overview": "The derivative measures how steep a curve is at a point and how fast a quantity is changing at an instant. You will compute derivatives straight from the limit definition, first at a single point and then as a whole new function, and learn what f′ and f″ tell you about the graph of f.",
+   "topics": [
+    "Derivatives and Rates of Change",
+    "The Derivative as a Function"
+   ],
+   "sections": [
+    [
+     "2.1",
+     "Derivatives and Rates of Change"
+    ],
+    [
+     "2.2",
+     "The Derivative as a Function"
+    ]
+   ],
+   "items": [
+    {
+     "id": "q1",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q2",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q3",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -2,
+       4
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q4",
+     "type": "numeric",
+     "unit": "m/s",
+     "choices": 0
+    },
+    {
+     "id": "q5",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -2,
+       2
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q6",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       0,
+       2
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q7",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q8",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "reflection",
+     "type": "text",
+     "unit": "",
+     "choices": 0
+    }
+   ],
+   "activityTitle": "Activity 3: Slopes from Scratch"
+  },
+  {
+   "n": 4,
+   "title": "Differentiation Formulas and Trigonometric Derivatives",
+   "tab": "M04 Differentiation Rules",
+   "icon": "🧮",
+   "optional": false,
+   "overview": "No more long limits: the Power, Product and Quotient Rules let you differentiate polynomials and rational functions in a line or two. You will also find the derivatives of all six trigonometric functions, starting from the special limit (sin θ)/θ → 1.",
+   "topics": [
+    "Differentiation Formulas",
+    "Derivatives of Trigonometric Functions"
+   ],
+   "sections": [
+    [
+     "2.3",
+     "Differentiation Formulas"
+    ],
+    [
+     "2.4",
+     "Derivatives of Trigonometric Functions"
+    ]
+   ],
+   "items": [
+    {
+     "id": "q1",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       0.5,
+       2.5
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q2",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q3",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q4",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q5",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -3,
+       3
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q6",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       0,
+       3
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q7",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q8",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "reflection",
+     "type": "text",
+     "unit": "",
+     "choices": 0
+    }
+   ],
+   "activityTitle": "Activity 4: Rules of the Game"
+  },
+  {
+   "n": 5,
+   "title": "The Chain Rule and Implicit Differentiation",
+   "tab": "M05 Chain Rule & Implicit",
+   "icon": "🔗",
+   "optional": false,
+   "overview": "The Chain Rule lets you differentiate compositions such as \\((x^2+1)^{10}\\) and \\(\\sin(x^2)\\), and it is the rule you will use most often in calculus. You will then use it to find slopes on curves like circles that are not written as y = f(x), with implicit differentiation.",
+   "topics": [
+    "The Chain Rule",
+    "Implicit Differentiation"
+   ],
+   "sections": [
+    [
+     "2.5",
+     "The Chain Rule"
+    ],
+    [
+     "2.6",
+     "Implicit Differentiation"
+    ]
+   ],
+   "items": [
+    {
+     "id": "q1",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -1.5,
+       1.5
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q2",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -1.5,
+       1.5
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q3",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q4",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q5",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q6",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x",
+      "y"
+     ],
+     "domain": {
+      "x": [
+       0.5,
+       2
+      ],
+      "y": [
+       0.5,
+       2
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q7",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q8",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "reflection",
+     "type": "text",
+     "unit": "",
+     "choices": 0
+    }
+   ],
+   "activityTitle": "Activity 5: Follow the Chain"
+  },
+  {
+   "n": 6,
+   "title": "Rates of Change, Related Rates and Linear Approximation",
+   "tab": "M06 Rates & Linear Approx",
+   "icon": "📏",
+   "optional": false,
+   "overview": "Derivatives measure rates of change everywhere in science: velocity in physics, reaction rates in chemistry, growth rates in biology and marginal cost in economics. You will also solve related rates problems with the Chain Rule, and use tangent lines and differentials to approximate values and estimate measurement errors.",
+   "topics": [
+    "Rates of Change in the Natural and Social Sciences",
+    "Related Rates",
+    "Linear Approximations and Differentials"
+   ],
+   "sections": [
+    [
+     "2.7",
+     "Rates of Change in the Natural and Social Sciences"
+    ],
+    [
+     "2.8",
+     "Related Rates"
+    ],
+    [
+     "2.9",
+     "Linear Approximations and Differentials"
+    ]
+   ],
+   "items": [
+    {
+     "id": "q1",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "t"
+     ],
+     "domain": {
+      "t": [
+       0,
+       4
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q2",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       0,
+       200
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q3",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q4",
+     "type": "numeric",
+     "unit": "cm/s",
+     "choices": 0
+    },
+    {
+     "id": "q5",
+     "type": "numeric",
+     "unit": "km/h",
+     "choices": 0
+    },
+    {
+     "id": "q6",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       0,
+       8
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q7",
+     "type": "numeric",
+     "unit": "cm²",
+     "choices": 0
+    },
+    {
+     "id": "q8",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "reflection",
+     "type": "text",
+     "unit": "",
+     "choices": 0
+    }
+   ],
+   "activityTitle": "Activity 6: Rates Everywhere"
+  },
+  {
+   "n": 7,
+   "title": "Maximum and Minimum Values and the Mean Value Theorem",
+   "tab": "M07 Max, Min and MVT",
+   "icon": "⛰️",
+   "optional": false,
+   "overview": "Where does a function reach its highest and lowest values? This module shows how critical numbers and the Closed Interval Method answer that question, and how Rolle's Theorem and the Mean Value Theorem turn facts about the derivative into facts about the function.",
+   "topics": [
+    "Maximum and Minimum Values",
+    "The Mean Value Theorem"
+   ],
+   "sections": [
+    [
+     "3.1",
+     "Maximum and Minimum Values"
+    ],
+    [
+     "3.2",
+     "The Mean Value Theorem"
+    ]
+   ],
+   "items": [
+    {
+     "id": "q1",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q2",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       0.2,
+       3
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q3",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q4",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q5",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q6",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "a",
+      "b"
+     ],
+     "domain": {
+      "a": [
+       0,
+       1
+      ],
+      "b": [
+       2,
+       3
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q7",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q8",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -2,
+       2
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "reflection",
+     "type": "text",
+     "unit": "",
+     "choices": 0
+    }
+   ],
+   "activityTitle": "Activity 7: Peaks, Valleys and Parallel Lines"
+  },
+  {
+   "n": 8,
+   "title": "The Shape of a Graph and Limits at Infinity",
+   "tab": "M08 Shape and Asymptotes",
+   "icon": "📈",
+   "optional": false,
+   "overview": "The signs of f′ and f″ reveal where a graph rises and falls, where it bends up or down, and where its peaks and valleys are. You will also study limits as x → ±∞, which describe a graph's long-run behaviour and its horizontal asymptotes.",
+   "topics": [
+    "How Derivative Affects the Shape of a Graph",
+    "Limit at Infinity; Horizontal Asymptotes"
+   ],
+   "sections": [
+    [
+     "3.3",
+     "How Derivatives Affect the Shape of a Graph"
+    ],
+    [
+     "3.4",
+     "Limits at Infinity; Horizontal Asymptotes"
+    ]
+   ],
+   "items": [
+    {
+     "id": "q1",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q2",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q3",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -4,
+       4
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q4",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q5",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q6",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "b"
+     ],
+     "domain": {
+      "b": [
+       1,
+       5
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q7",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "a"
+     ],
+     "domain": {
+      "a": [
+       1,
+       5
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q8",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "reflection",
+     "type": "text",
+     "unit": "",
+     "choices": 0
+    }
+   ],
+   "activityTitle": "Activity 8: Reading the Shape"
+  },
+  {
+   "n": 9,
+   "title": "Curve Sketching and Optimization",
+   "tab": "M09 Sketching & Optimizing",
+   "icon": "📦",
+   "optional": false,
+   "overview": "Put limits, first derivatives and second derivatives together into one checklist for drawing accurate graphs by hand. Then use the same tools to solve optimization problems: the biggest box, the cheapest can, the closest point.",
+   "topics": [
+    "Summary of Curve Sketching",
+    "Optimization Problems"
+   ],
+   "sections": [
+    [
+     "3.5",
+     "Summary of Curve Sketching"
+    ],
+    [
+     "3.7",
+     "Optimization Problems"
+    ]
+   ],
+   "items": [
+    {
+     "id": "q1",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q2",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -3,
+       3
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q3",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q4",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       0.2,
+       4.8
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q5",
+     "type": "numeric",
+     "unit": "cm³",
+     "choices": 0
+    },
+    {
+     "id": "q6",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "P"
+     ],
+     "domain": {
+      "P": [
+       1,
+       20
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q7",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q8",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "reflection",
+     "type": "text",
+     "unit": "",
+     "choices": 0
+    }
+   ],
+   "activityTitle": "Activity 9: Shapes and Best Choices"
+  },
+  {
+   "n": 10,
+   "title": "Newton's Method and Antiderivatives",
+   "tab": "M10 Newton & Antiderivatives",
+   "icon": "🔁",
+   "optional": false,
+   "overview": "Use tangent lines to solve equations that algebra cannot, with Newton's method. Then run differentiation backwards: find antiderivatives, use initial conditions to pick the right one, and recover position from velocity and acceleration.",
+   "topics": [
+    "Newton's Method",
+    "Antiderivatives"
+   ],
+   "sections": [
+    [
+     "3.8",
+     "Newton's Method"
+    ],
+    [
+     "3.9",
+     "Antiderivatives"
+    ]
+   ],
+   "items": [
+    {
+     "id": "q1",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -2,
+       2
+      ]
+     },
+     "constant": true
+    },
+    {
+     "id": "q2",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       0.3,
+       3
+      ]
+     },
+     "constant": true
+    },
+    {
+     "id": "q3",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -1.2,
+       1.2
+      ]
+     },
+     "constant": true
+    },
+    {
+     "id": "q4",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q5",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q6",
+     "type": "numeric",
+     "unit": "m",
+     "choices": 0
+    },
+    {
+     "id": "q7",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q8",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "reflection",
+     "type": "text",
+     "unit": "",
+     "choices": 0
+    }
+   ],
+   "activityTitle": "Activity 10: Working Backwards"
+  },
+  {
+   "n": 11,
+   "title": "Inverse Functions and Exponential Functions",
+   "tab": "M11 Inverse & Exponential",
+   "icon": "🪞",
+   "optional": false,
+   "overview": "This module begins Chapter 6: you learn when a function can be run backwards, how to find and graph its inverse, and how to differentiate an inverse without a formula for it. Then you meet exponential functions, the special number e, and the remarkable fact that e^x is its own derivative.",
+   "topics": [
+    "Inverse Functions",
+    "Exponential Functions and their Derivatives"
+   ],
+   "sections": [
+    [
+     "6.1",
+     "Inverse Functions"
+    ],
+    [
+     "6.2",
+     "Exponential Functions and Their Derivatives"
+    ]
+   ],
+   "items": [
+    {
+     "id": "q1",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q2",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -2,
+       2
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q3",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q4",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -1.5,
+       1.5
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q5",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -1.5,
+       1.5
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q6",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q7",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q8",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "reflection",
+     "type": "text",
+     "unit": "",
+     "choices": 0
+    }
+   ],
+   "activityTitle": "Activity 11: Running Functions Backwards"
+  },
+  {
+   "n": 12,
+   "title": "Logarithmic Functions and Their Derivatives",
+   "tab": "M12 Logarithms",
+   "icon": "🪵",
+   "optional": false,
+   "overview": "Logarithms are the inverses of exponential functions. In this module you learn their laws, the natural logarithm ln x and the change-of-base formula, and then differentiate logarithms and general exponentials, including the powerful technique of logarithmic differentiation.",
+   "topics": [
+    "Logarithmic Functions",
+    "Derivatives of Logarithmic Functions"
+   ],
+   "sections": [
+    [
+     "6.3",
+     "Logarithmic Functions"
+    ],
+    [
+     "6.4",
+     "Derivatives of Logarithmic Functions"
+    ]
+   ],
+   "items": [
+    {
+     "id": "q1",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q2",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q3",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -3,
+       3
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q4",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -1.5,
+       1.5
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q5",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q6",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q7",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       0.3,
+       3
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q8",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "reflection",
+     "type": "text",
+     "unit": "",
+     "choices": 0
+    }
+   ],
+   "activityTitle": "Activity 12: Logs to the Rescue"
+  },
+  {
+   "n": 13,
+   "title": "Exponential Growth and Decay; Inverse Trigonometric Functions",
+   "tab": "M13 Growth & Inverse Trig",
+   "icon": "📈",
+   "optional": false,
+   "overview": "When a quantity changes at a rate proportional to its size, it grows or decays exponentially. You will model populations, radioactive decay, cooling and continuously compounded interest, then define the inverse sine, cosine and tangent functions and find their derivatives.",
+   "topics": [
+    "Exponential Growth and Decay",
+    "Inverse Trigonometric Functions"
+   ],
+   "sections": [
+    [
+     "6.5",
+     "Exponential Growth and Decay"
+    ],
+    [
+     "6.6",
+     "Inverse Trigonometric Functions"
+    ]
+   ],
+   "items": [
+    {
+     "id": "q1",
+     "type": "numeric",
+     "unit": "people",
+     "choices": 0
+    },
+    {
+     "id": "q2",
+     "type": "numeric",
+     "unit": "mg",
+     "choices": 0
+    },
+    {
+     "id": "q3",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -2,
+       2
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q4",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -2,
+       2
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q5",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q6",
+     "type": "numeric",
+     "unit": "°C",
+     "choices": 0
+    },
+    {
+     "id": "q7",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -0.9,
+       0.9
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q8",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "reflection",
+     "type": "text",
+     "unit": "",
+     "choices": 0
+    }
+   ],
+   "activityTitle": "Activity 13: Rates, Half-Lives and Angles"
+  },
+  {
+   "n": 14,
+   "title": "Hyperbolic Functions and l'Hospital's Rule",
+   "tab": "M14 Hyperbolic & l'Hospital",
+   "icon": "🌉",
+   "optional": false,
+   "overview": "The hyperbolic functions are built from e^x and e^(-x) and behave much like the trigonometric functions, with a few sign changes. You will differentiate them and their inverses, then use l'Hospital's Rule to evaluate limits of the indeterminate forms 0/0, ∞/∞, 0·∞, ∞ − ∞, 1^∞, 0^0 and ∞^0.",
+   "topics": [
+    "Hyperbolic Function",
+    "Inderterminate Forms and l'Hospital Rule"
+   ],
+   "sections": [
+    [
+     "6.7",
+     "Hyperbolic Functions"
+    ],
+    [
+     "6.8",
+     "Indeterminate Forms and l'Hospital's Rule"
+    ]
+   ],
+   "items": [
+    {
+     "id": "q1",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -1.5,
+       1.5
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q2",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -1.5,
+       1.5
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q3",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q4",
+     "type": "expr",
+     "unit": "",
+     "choices": 0,
+     "vars": [
+      "x"
+     ],
+     "domain": {
+      "x": [
+       -1.5,
+       1.5
+      ]
+     },
+     "constant": false
+    },
+    {
+     "id": "q5",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q6",
+     "type": "mc",
+     "unit": "",
+     "choices": 4
+    },
+    {
+     "id": "q7",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "q8",
+     "type": "numeric",
+     "unit": "",
+     "choices": 0
+    },
+    {
+     "id": "reflection",
+     "type": "text",
+     "unit": "",
+     "choices": 0
+    }
+   ],
+   "activityTitle": "Activity 14: Hyperbolas and Hidden Limits"
+  }
+ ]
+}

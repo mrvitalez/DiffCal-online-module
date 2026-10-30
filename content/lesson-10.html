@@ -1,0 +1,83 @@
+<section class="ch accent" id="objectives">
+<h2><span class="num">🔁</span>What you will learn</h2>
+<p class="lead">By the end of this module, you can:</p>
+<ul class="checks"><li>Derive the Newton's method formula from the tangent line and use it to build an iteration table.</li><li>Choose a sensible starting value and recognise situations in which Newton's method fails.</li><li>Find the most general antiderivative of a function using a table of antiderivatives.</li><li>Use initial conditions to find a particular antiderivative, including from a given second derivative.</li><li>Find velocity and position from acceleration in rectilinear motion problems.</li></ul>
+<div class="callout"><span class="label">How to use this module</span>
+(1) Read each section with pen and paper. (2) Try every worked example before opening its solution. (3) Watch the lecture video and answer its questions. (4) Answer the activity, write your solutions, and submit. Your score is recorded for your instructor. For the full treatment, read §3.8, §3.9 of Stewart, <em>Calculus</em>, 8th edition.</div>
+</section>
+<section class="ch" id="s1"><h2><span class="num">3.8</span>Newton&#x27;s Method</h2><p>Many equations cannot be solved with algebra: try \(x^3 - x - 3 = 0\) or \(\cos x = x\). Stewart §3.8 describes <strong>Newton's method</strong>, which uses tangent lines to get very accurate approximations of a root in a few steps.</p>
+<p><strong>Where the formula comes from.</strong> Suppose \(r\) is a root of \(f(x) = 0\) and \(x_1\) is a first guess near \(r\). Near \(x_1\) the curve looks like its tangent line
+\[y = f(x_1) + f'(x_1)(x - x_1).\]
+A line is easy to solve: set \(y = 0\) and call the \(x\)-intercept \(x_2\). Then \(0 = f(x_1) + f'(x_1)(x_2 - x_1)\), so
+\[x_2 = x_1 - \frac{f(x_1)}{f'(x_1)}, \quad \text{provided } f'(x_1) \ne 0.\]
+Why should this help? Close to \(x_1\), the tangent line and the curve almost agree, so the place where the <em>line</em> crosses the axis should be near the place where the <em>curve</em> does. Usually \(x_2\) is closer to \(r\) than \(x_1\) was (Figure 10.1). Now repeat with \(x_2\) in place of \(x_1\), and so on.</p>
+<div class="callout blue"><span class="label">Newton's method</span> \[x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}, \qquad n = 1, 2, 3, \dots\] If the numbers \(x_n\) approach a limit, that limit is a root of \(f(x) = 0\).</div>
+<p><strong>An iteration table.</strong> For \(f(x) = x^3 - x - 3\) we have \(f'(x) = 3x^2 - 1\). Since \(f(1) = -3 &lt; 0\) and \(f(2) = 3 &gt; 0\), a root lies between 1 and 2; start at \(x_1 = 1.5\).</p>
+<table><tr><th>\(n\)</th><th>\(x_n\)</th><th>\(f(x_n)\)</th><th>\(f'(x_n)\)</th></tr>
+<tr><td>1</td><td>1.5</td><td>\(-1.125\)</td><td>5.75</td></tr>
+<tr><td>2</td><td>1.695652</td><td>0.179749</td><td>7.625709</td></tr>
+<tr><td>3</td><td>1.672081</td><td>0.002813</td><td>7.387563</td></tr>
+<tr><td>4</td><td>1.671700</td><td>0.0000007</td><td>7.383742</td></tr></table>
+<p>So \(x_2 = 1.5 - \frac{-1.125}{5.75} \approx 1.695652\), and so on. Once two successive values agree to the number of decimals you want, stop: here the root is \(r \approx 1.6717\) (to 4 decimal places). Notice how the number of correct digits roughly doubles at each step. Keep all digits on your calculator between steps; round only at the end.</p>
+<p><strong>When Newton's method fails.</strong></p>
+<ul><li>If \(f'(x_n) = 0\), the tangent is horizontal and never meets the \(x\)-axis: the formula divides by zero.</li>
+<li>If \(f'(x_n)\) is close to 0, \(x_{n+1}\) is thrown far away, possibly toward a <em>different</em> root than the one you wanted.</li>
+<li>For some functions the guesses get worse each time. For \(f(x) = \sqrt[3]{x}\) the formula simplifies to \(x_{n+1} = -2x_n\), so \(1, -2, 4, -8, \dots\) runs away from the root 0 (Figure 10.2).</li></ul>
+<div class="callout warn"><span class="label">Common mistake</span> Set your calculator to <strong>radians</strong> whenever trigonometric functions appear, and always start with a sensible \(x_1\): use a sign change of \(f\) or a quick sketch to locate the root first.</div><div class="callout blue"><span class="label">Key equations</span><div class="eq">\[ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \]</div><div class="eq">\[ y = f(x_n) + f'(x_n)(x - x_n) \ \text{(tangent line used at each step)} \]</div></div><figure><img src="https://raw.githubusercontent.com/mrvitalez/DiffCal-online-module/main/img/fig-10-1.png" alt="A cubic curve rising through the x-axis near 1.67. A straight tangent line touches the curve at x = 1.5, below the axis, and crosses the x-axis slightly to the right of the root." loading="lazy"><figcaption>Figure 10.1 One step of Newton&#x27;s method for f(x) = x³ − x − 3. The tangent line at x₁ = 1.5 crosses the x-axis at x₂ ≈ 1.696, much closer to the root r ≈ 1.672.</figcaption></figure><figure><img src="https://raw.githubusercontent.com/mrvitalez/DiffCal-online-module/main/img/fig-10-2.png" alt="The cube-root curve through the origin. A tangent line at x = 1 crosses the axis at -2, and the tangent line at x = -2 crosses the axis at 4, moving away from the root." loading="lazy"><figcaption>Figure 10.2 Newton&#x27;s method fails for f(x) = ∛x: each tangent line lands twice as far from the root 0, on the other side (1 → −2 → 4).</figcaption></figure></section><section class="ch" id="s2"><h2><span class="num">3.9</span>Antiderivatives</h2><p>So far you have started with a function and found its derivative. Stewart §3.9 asks the reverse question: if you know the derivative, what was the function?</p>
+<div class="callout blue"><span class="label">Definition</span> A function \(F\) is an <strong>antiderivative</strong> of \(f\) on an interval \(I\) if \(F'(x) = f(x)\) for all \(x\) in \(I\).</div>
+<p>For \(f(x) = 3x^2\), one antiderivative is \(x^3\). But \(x^3 + 5\) and \(x^3 - 2\) also work, because the derivative of a constant is 0. Are there any others? No: a consequence of the Mean Value Theorem is that two functions with the same derivative on an interval differ by a constant. So:</p>
+<div class="callout blue"><span class="label">Theorem</span> If \(F\) is an antiderivative of \(f\) on an interval \(I\), then the <strong>most general antiderivative</strong> of \(f\) on \(I\) is \(F(x) + C\), where \(C\) is an arbitrary constant.</div>
+<p>Graphically, the antiderivatives form a family of vertical shifts of one curve (Figure 10.3). All of them have the same slope at each \(x\).</p>
+<p><strong>A table of antiderivatives.</strong> Read each derivative rule backwards:</p>
+<table><tr><th>Function</th><th>Particular antiderivative</th></tr>
+<tr><td>\(c\,f(x)\)</td><td>\(c\,F(x)\)</td></tr>
+<tr><td>\(f(x) + g(x)\)</td><td>\(F(x) + G(x)\)</td></tr>
+<tr><td>\(x^n\ (n \ne -1)\)</td><td>\(\dfrac{x^{n+1}}{n+1}\)</td></tr>
+<tr><td>\(\cos x\)</td><td>\(\sin x\)</td></tr>
+<tr><td>\(\sin x\)</td><td>\(-\cos x\)</td></tr>
+<tr><td>\(\sec^2 x\)</td><td>\(\tan x\)</td></tr>
+<tr><td>\(\sec x \tan x\)</td><td>\(\sec x\)</td></tr></table>
+<p>Add \(+\,C\) once at the end for the general antiderivative. Rewrite roots and fractions as powers first: \(\sqrt{x} = x^{1/2}\) has antiderivative \(\tfrac23 x^{3/2}\), and \(\dfrac{2}{x^3} = 2x^{-3}\) has antiderivative \(\dfrac{2x^{-2}}{-2} = -\dfrac{1}{x^2}\). (The case \(n = -1\) needs a new function, which you will meet in Chapter 6.) Always check by differentiating your answer.</p>
+<p><strong>Initial conditions.</strong> An extra fact such as \(F(1) = 4\) picks out one member of the family. Example: if \(f'(x) = 4x - \cos x\) and \(f(0) = 3\), then \(f(x) = 2x^2 - \sin x + C\), and \(f(0) = C = 3\). So \(f(x) = 2x^2 - \sin x + 3\). If you are given \(f''\), antidifferentiate twice; you will need two conditions for the two constants.</p>
+<p><strong>Rectilinear motion.</strong> For an object moving on a line, \(v = s'\) and \(a = v'\). So velocity is an antiderivative of acceleration and position is an antiderivative of velocity. Near Earth's surface, a falling object has \(a = -9.8\text{ m/s}^2\) (up positive), which gives \(v(t) = -9.8t + v_0\) and \(s(t) = -4.9t^2 + v_0 t + s_0\), where \(v_0\) and \(s_0\) are the initial velocity and position.</p>
+<div class="callout warn"><span class="label">Common mistake</span> Forgetting \(+\,C\), or adding the second constant only at the very end when working from \(f''\). Each antidifferentiation brings its own constant, and you should find it before going on.</div><div class="callout blue"><span class="label">Key equations</span><div class="eq">\[ F'(x) = f(x) \ \Rightarrow\ \text{general antiderivative } F(x) + C \]</div><div class="eq">\[ x^n \ \to\ \frac{x^{n+1}}{n+1} + C \quad (n \ne -1) \]</div><div class="eq">\[ a(t) = v'(t), \quad v(t) = s'(t) \]</div></div><figure><img src="https://raw.githubusercontent.com/mrvitalez/DiffCal-online-module/main/img/fig-10-3.png" alt="Five copies of the same cubic curve, each shifted up or down by one unit, with horizontal tangents at x = -1 and x = 1." loading="lazy"><figcaption>Figure 10.3 Some members of the family of antiderivatives F(x) = x³ − 3x + C of f(x) = 3x² − 3. They are vertical shifts of each other and have the same slope at every x.</figcaption></figure><figure><img src="https://raw.githubusercontent.com/mrvitalez/DiffCal-online-module/main/img/fig-10-4.png" alt="A downward-opening parabola starting at height 20 when t = 0, rising to about 31.5 at t about 1.53, and reaching height 0 at t about 4.07." loading="lazy"><figcaption>Figure 10.4 Height s(t) = −4.9t² + 15t + 20 of a ball thrown upward at 15 m/s from a 20 m platform (Example 3). It peaks at t ≈ 1.53 s and lands at t ≈ 4.07 s.</figcaption></figure></section>
+<section class="ch accent" id="takeaways">
+<h2><span class="num">★</span>Key takeaways</h2>
+<ul class="checks"><li>Newton's method replaces the curve by its tangent line: x_{n+1} = x_n − f(x_n)/f′(x_n).</li><li>Stop when successive approximations agree to the required number of decimals; keep all digits in between.</li><li>Newton's method can fail when f′(x_n) = 0 or is very small, or when the iterates run away from the root.</li><li>If F′ = f on an interval, every antiderivative of f there has the form F(x) + C.</li><li>Initial conditions fix the constants: one condition per antidifferentiation.</li><li>Velocity is an antiderivative of acceleration, and position is an antiderivative of velocity.</li></ul>
+</section>
+
+<section class="ch" id="examples">
+<h2><span class="num">⟡</span>Worked examples</h2>
+<p class="lead">Try each example yourself first, then open the solution and compare your steps.</p>
+<div class="prob"><div class="head"><span class="n">Example 10.1</span>
+<span class="t">A cube root by Newton&#x27;s method</span></div>
+<div class="body"><p>Use Newton's method to find \(\sqrt[3]{20}\) correct to six decimal places.</p> <small class="muted">(Similar to Stewart §3.8, Example 2)</small></div>
+<details class="ans"><summary>Show solution <small>(try it first)</small></summary>
+<div class="a"><p><strong>Strategy:</strong></p><p>\(\sqrt[3]{20}\) is the positive root of \(f(x) = x^3 - 20 = 0\). Since \(2^3 = 8\) and \(3^3 = 27\), the root is between 2 and 3, nearer 3; take \(x_1 = 3\). Iterate until two successive values agree to six decimals.</p><p><strong>Solution:</strong></p><p>\(f'(x) = 3x^2\), so
+\[x_{n+1} = x_n - \frac{x_n^3 - 20}{3x_n^2}.\]</p>
+<p>\(x_2 = 3 - \dfrac{27 - 20}{27} = 3 - 0.259259 = 2.740741\).</p>
+<p>\(x_3 = 2.740741 - \dfrac{2.740741^3 - 20}{3(2.740741)^2} = 2.740741 - \dfrac{0.587512}{22.534979} \approx 2.714670\).</p>
+<p>\(x_4 \approx 2.714670 - \dfrac{0.005571}{22.108294}\approx 2.714418\) (more exactly 2.7144176).</p>
+<p>\(x_5 \approx 2.7144176\) again (the change is about \(2\times 10^{-8}\)).</p>
+<p>Since \(x_4\) and \(x_5\) agree to six decimal places, \(\sqrt[3]{20} \approx 2.714418\).</p><p><strong>Check:</strong></p><p>\(2.714418^3 \approx 20.000008\) and \(2.714417^3 \approx 19.999986\), so the root lies between them and is closer to 2.714418. ✓ Keep every digit between steps; rounding \(x_2\) to 2.74 would slow things down.</p></div></details></div><div class="prob"><div class="head"><span class="n">Example 10.2</span>
+<span class="t">Finding f from f&#x27;&#x27;</span></div>
+<div class="body"><p>Find \(f\) if \(f''(x) = 6x + 4\sin x\), \(f'(0) = 1\) and \(f(0) = 3\).</p> <small class="muted">(Similar to Stewart §3.9, Example 5)</small></div>
+<details class="ans"><summary>Show solution <small>(try it first)</small></summary>
+<div class="a"><p><strong>Strategy:</strong></p><p>Antidifferentiate once to get \(f'\) with a constant \(C\); use \(f'(0) = 1\) to find \(C\). Then antidifferentiate again with a new constant \(D\) and use \(f(0) = 3\).</p><p><strong>Solution:</strong></p><p>An antiderivative of \(6x\) is \(3x^2\); of \(4\sin x\) it is \(-4\cos x\). So
+\[f'(x) = 3x^2 - 4\cos x + C.\]</p>
+<p>\(f'(0) = 0 - 4\cos 0 + C = -4 + C = 1\), so \(C = 5\) and \(f'(x) = 3x^2 - 4\cos x + 5\).</p>
+<p>Again: an antiderivative of \(3x^2\) is \(x^3\), of \(-4\cos x\) is \(-4\sin x\), of 5 is \(5x\). So
+\[f(x) = x^3 - 4\sin x + 5x + D.\]</p>
+<p>\(f(0) = 0 - 0 + 0 + D = 3\), so \(D = 3\).</p>
+<p>\[f(x) = x^3 - 4\sin x + 5x + 3.\]</p><p><strong>Check:</strong></p><p>\(f'(x) = 3x^2 - 4\cos x + 5\), \(f'(0) = -4 + 5 = 1\) ✓; \(f''(x) = 6x + 4\sin x\) ✓; \(f(0) = 3\) ✓. A common error is \(\int \sin x = \cos x\): remember the derivative of \(\cos x\) is \(-\sin x\), so the antiderivative of \(\sin x\) is \(-\cos x\).</p></div></details></div><div class="prob"><div class="head"><span class="n">Example 10.3</span>
+<span class="t">A ball thrown upward</span></div>
+<div class="body"><p>A ball is thrown straight up at 15 m/s from the edge of a platform 20 m above the ground. Use \(a = -9.8\text{ m/s}^2\). (a) When does the ball reach its maximum height, and what is that height? (b) When does it hit the ground?</p> <small class="muted">(Similar to Stewart §3.9, Example 7)</small></div>
+<details class="ans"><summary>Show solution <small>(try it first)</small></summary>
+<div class="a"><p><strong>Strategy:</strong></p><p>Take up as positive and \(s\) = height above the ground. Antidifferentiate \(a(t) = -9.8\) to get \(v\), then \(s\), using \(v(0) = 15\) and \(s(0) = 20\). The top is where \(v = 0\); the ground is where \(s = 0\).</p><p><strong>Solution:</strong></p><p>\(v(t) = -9.8t + C\), and \(v(0) = 15\) gives \(C = 15\): \(v(t) = -9.8t + 15\).</p>
+<p>\(s(t) = -4.9t^2 + 15t + D\), and \(s(0) = 20\) gives \(D = 20\): \(s(t) = -4.9t^2 + 15t + 20\).</p>
+<p>(a) \(v(t) = 0\) when \(t = \dfrac{15}{9.8} \approx 1.53\) s. The height then is
+\[s\!\left(\tfrac{15}{9.8}\right) = 20 + \frac{15^2}{4(4.9)} = 20 + \frac{225}{19.6} \approx 31.48\text{ m}.\]</p>
+<p>(b) Solve \(-4.9t^2 + 15t + 20 = 0\), i.e. \(4.9t^2 - 15t - 20 = 0\):
+\[t = \frac{15 \pm \sqrt{225 + 392}}{9.8} = \frac{15 \pm \sqrt{617}}{9.8}.\]
+The negative root makes no sense here, so \(t = \dfrac{15 + 24.839}{9.8} \approx 4.07\) s.</p><p><strong>Check:</strong></p><p>\(s(4.07) \approx -4.9(16.56) + 61.05 + 20 \approx 0\) ✓. The ball rises for 1.53 s and falls from 31.48 m for about \(\sqrt{31.48/4.9} \approx 2.53\) s, total about 4.07 s ✓ (Figure 10.4).</p></div></details></div>
+</section>
