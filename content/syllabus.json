@@ -123,19 +123,14 @@
  "videoCredit": "Lecture videos in the modules: Khan Academy; MIT OpenCourseWare, 18.01 Single Variable Calculus, Fall 2006. MIT OpenCourseWare videos are licensed CC BY-NC-SA 4.0 and Khan Academy videos CC BY-NC-SA 3.0 US. Each video is cited on its module page.",
  "consultation": [
   {
-   "day": "Monday",
-   "time": "10:30 AM to 12:00 NN",
+   "day": "Wednesday",
+   "time": "09:00 AM to 12:00 NN",
    "room": "RnD AS611"
   },
   {
-   "day": "Tuesday",
-   "time": "5:30 PM to 7:30 PM",
+   "day": "Friday",
+   "time": "09:00 AM to 11:00 AM",
    "room": "RnD AS611"
   },
-  {
-   "day": "Thursday",
-   "time": "4:30 PM to 6:00 PM",
-   "room": "RnD AS611"
-  }
  ]
 }
