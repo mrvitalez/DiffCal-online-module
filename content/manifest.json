@@ -143,7 +143,7 @@
    "tab": "M01 Functions and Models",
    "icon": "📈",
    "optional": false,
-   "overview": "Every idea in calculus is about functions. This module reviews how functions are represented, builds a catalog of the essential functions and their graphs, and shows how to make new functions by transforming, combining and composing old ones.",
+   "overview": "Everything we do in calculus is about functions. In this module we review how a function can be represented, build a catalog of the essential functions and their graphs, and learn how to make new functions by shifting, stretching, combining and composing old ones.",
    "topics": [
     "Four Ways to Represent a Function",
     "Mathematical Models: A Catalog of Essential Functions",
@@ -262,7 +262,7 @@
    "tab": "M02 Limits and Continuity",
    "icon": "🎯",
    "optional": false,
-   "overview": "Limits are the foundation of calculus. Starting from tangent lines and velocities, you will learn what a limit means, how to compute limits with the Limit Laws and algebra, how to state a limit precisely with ε and δ, and what it means for a function to be continuous.",
+   "overview": "Before calculus, mathematics could only handle averages. In this module we ask what happens \"exactly at this point\" and \"exactly at this instant\". That question leads us to limits: what they mean, how to compute them, how to define them precisely with ε and δ, and what it means for a function to be continuous.",
    "topics": [
     "The Tangent and Velocity Problem",
     "The Limit of a Function",
@@ -386,7 +386,7 @@
    "tab": "M03 Derivatives",
    "icon": "📈",
    "optional": false,
-   "overview": "The derivative measures how steep a curve is at a point and how fast a quantity is changing at an instant. You will compute derivatives straight from the limit definition, first at a single point and then as a whole new function, and learn what f′ and f″ tell you about the graph of f.",
+   "overview": "How do we find the slope of a curve at one exact point, or the velocity of an object at one exact instant? Both questions lead to the same limit, the derivative. We will compute it from the definition, first at a single number a and then as a whole new function f′(x), and see what f′ and f″ tell us about a graph.",
    "topics": [
     "Derivatives and Rates of Change",
     "The Derivative as a Function"
@@ -495,7 +495,7 @@
    "tab": "M04 Differentiation Rules",
    "icon": "🧮",
    "optional": false,
-   "overview": "No more long limits: the Power, Product and Quotient Rules let you differentiate polynomials and rational functions in a line or two. You will also find the derivatives of all six trigonometric functions, starting from the special limit (sin θ)/θ → 1.",
+   "overview": "Do we really have to compute a long limit every time we need a derivative? No. In this module we learn the differentiation formulas (Constant, Power, Constant Multiple, Sum, Difference, Product and Quotient Rules) and the derivatives of the six trigonometric functions, so most derivatives take only a few lines.",
    "topics": [
     "Differentiation Formulas",
     "Derivatives of Trigonometric Functions"
@@ -604,7 +604,7 @@
    "tab": "M05 Chain Rule & Implicit",
    "icon": "🔗",
    "optional": false,
-   "overview": "The Chain Rule lets you differentiate compositions such as \\((x^2+1)^{10}\\) and \\(\\sin(x^2)\\), and it is the rule you will use most often in calculus. You will then use it to find slopes on curves like circles that are not written as y = f(x), with implicit differentiation.",
+   "overview": "So far we can differentiate sums, products and quotients. But how do we differentiate \\((x^2+1)^{10}\\) or \\(\\sin(x^2)\\)? In this module we will learn the Chain Rule, the rule we will use most often in calculus, and then use it to find slopes on curves like circles that are not written as y = f(x), with implicit differentiation.",
    "topics": [
     "The Chain Rule",
     "Implicit Differentiation"
@@ -718,7 +718,7 @@
    "tab": "M06 Rates & Linear Approx",
    "icon": "📏",
    "optional": false,
-   "overview": "Derivatives measure rates of change everywhere in science: velocity in physics, reaction rates in chemistry, growth rates in biology and marginal cost in economics. You will also solve related rates problems with the Chain Rule, and use tangent lines and differentials to approximate values and estimate measurement errors.",
+   "overview": "Derivatives measure rates of change everywhere in science: velocity in physics, reaction rates in chemistry, growth rates in biology and marginal cost in economics. In this module we will also solve related rates problems with the Chain Rule, and use tangent lines and differentials to approximate values and estimate measurement errors.",
    "topics": [
     "Rates of Change in the Natural and Social Sciences",
     "Related Rates",
@@ -832,7 +832,7 @@
    "tab": "M07 Max, Min and MVT",
    "icon": "⛰️",
    "optional": false,
-   "overview": "Where does a function reach its highest and lowest values? This module shows how critical numbers and the Closed Interval Method answer that question, and how Rolle's Theorem and the Mean Value Theorem turn facts about the derivative into facts about the function.",
+   "overview": "Where does a function reach its highest and lowest values? In this module we will see how critical numbers and the Closed Interval Method answer that question, and how Rolle's Theorem and the Mean Value Theorem let us turn facts about the derivative into facts about the function.",
    "topics": [
     "Maximum and Minimum Values",
     "The Mean Value Theorem"
@@ -946,7 +946,7 @@
    "tab": "M08 Shape and Asymptotes",
    "icon": "📈",
    "optional": false,
-   "overview": "The signs of f′ and f″ reveal where a graph rises and falls, where it bends up or down, and where its peaks and valleys are. You will also study limits as x → ±∞, which describe a graph's long-run behaviour and its horizontal asymptotes.",
+   "overview": "What can the signs of f′ and f″ tell us about a graph? In this module we will see where a graph rises and falls, where it bends up or down, and where its peaks and valleys are. We will also study limits as x → ±∞, which describe a graph's long-run behaviour and its horizontal asymptotes.",
    "topics": [
     "How Derivative Affects the Shape of a Graph",
     "Limit at Infinity; Horizontal Asymptotes"
@@ -1055,7 +1055,7 @@
    "tab": "M09 Sketching & Optimizing",
    "icon": "📦",
    "optional": false,
-   "overview": "Put limits, first derivatives and second derivatives together into one checklist for drawing accurate graphs by hand. Then use the same tools to solve optimization problems: the biggest box, the cheapest can, the closest point.",
+   "overview": "Let's put limits, first derivatives and second derivatives together into one checklist for drawing accurate graphs by hand. Then we will use the same tools to solve optimization problems: the biggest box, the cheapest can, the closest point.",
    "topics": [
     "Summary of Curve Sketching",
     "Optimization Problems"
@@ -1164,7 +1164,7 @@
    "tab": "M10 Newton & Antiderivatives",
    "icon": "🔁",
    "optional": false,
-   "overview": "Use tangent lines to solve equations that algebra cannot, with Newton's method. Then run differentiation backwards: find antiderivatives, use initial conditions to pick the right one, and recover position from velocity and acceleration.",
+   "overview": "How do we solve an equation that algebra cannot? Let's use tangent lines, with Newton's method. Then we run differentiation backwards: we find antiderivatives, use initial conditions to pick the right one, and recover position from velocity and acceleration.",
    "topics": [
     "Newton's Method",
     "Antiderivatives"
@@ -1273,7 +1273,7 @@
    "tab": "M11 Inverse & Exponential",
    "icon": "🪞",
    "optional": false,
-   "overview": "This module begins Chapter 6: you learn when a function can be run backwards, how to find and graph its inverse, and how to differentiate an inverse without a formula for it. Then you meet exponential functions, the special number e, and the remarkable fact that e^x is its own derivative.",
+   "overview": "This module begins Chapter 6. We learn which functions can be reversed, how to find an inverse in three steps, and how to get the derivative of an inverse without its formula. Then we recall exponential functions, meet the special number e, and see that e^x is its own derivative.",
    "topics": [
     "Inverse Functions",
     "Exponential Functions and their Derivatives"
@@ -1382,7 +1382,7 @@
    "tab": "M12 Logarithms",
    "icon": "🪵",
    "optional": false,
-   "overview": "Logarithms are the inverses of exponential functions. In this module you learn their laws, the natural logarithm ln x and the change-of-base formula, and then differentiate logarithms and general exponentials, including the powerful technique of logarithmic differentiation.",
+   "overview": "Logarithms are the inverses of exponential functions. In this module we learn their laws, the natural logarithm ln x and the change-of-base formula. Then we differentiate logarithms and general exponentials, and use logarithmic differentiation for functions like x^x.",
    "topics": [
     "Logarithmic Functions",
     "Derivatives of Logarithmic Functions"
@@ -1491,7 +1491,7 @@
    "tab": "M13 Growth & Inverse Trig",
    "icon": "📈",
    "optional": false,
-   "overview": "When a quantity changes at a rate proportional to its size, it grows or decays exponentially. You will model populations, radioactive decay, cooling and continuously compounded interest, then define the inverse sine, cosine and tangent functions and find their derivatives.",
+   "overview": "When a quantity changes at a rate proportional to its size, it grows or decays exponentially. Let's model populations, radioactive decay, cooling and continuously compounded interest. Then we will define the inverse sine, cosine and tangent functions and find their derivatives.",
    "topics": [
     "Exponential Growth and Decay",
     "Inverse Trigonometric Functions"
@@ -1600,7 +1600,7 @@
    "tab": "M14 Hyperbolic & l'Hospital",
    "icon": "🌉",
    "optional": false,
-   "overview": "The hyperbolic functions are built from e^x and e^(-x) and behave much like the trigonometric functions, with a few sign changes. You will differentiate them and their inverses, then use l'Hospital's Rule to evaluate limits of the indeterminate forms 0/0, ∞/∞, 0·∞, ∞ − ∞, 1^∞, 0^0 and ∞^0.",
+   "overview": "The hyperbolic functions are built from e^x and e^(-x), and we will see that they behave much like the trigonometric functions, with a few sign changes. Let's differentiate them and their inverses, then use l'Hospital's Rule to evaluate limits of the indeterminate forms 0/0, ∞/∞, 0·∞, ∞ − ∞, 1^∞, 0^0 and ∞^0.",
    "topics": [
     "Hyperbolic Function",
     "Inderterminate Forms and l'Hospital Rule"
