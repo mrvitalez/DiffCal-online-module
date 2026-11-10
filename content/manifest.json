@@ -1703,5 +1703,33 @@
    ],
    "activityTitle": "Activity 14: Hyperbolas and Hidden Limits"
   }
- ]
+ ],
+ "designs": {
+  "home": "felt",
+  "modules": {
+   "1": "blueprint",
+   "2": "lens",
+   "3": "landscape",
+   "4": "dotgrid",
+   "5": "fluted",
+   "6": "ripples",
+   "7": "contour",
+   "8": "clouds",
+   "9": "stipple",
+   "10": "dither",
+   "11": "grain",
+   "12": "paper",
+   "13": "grass",
+   "14": "graphite"
+  },
+  "problemSets": {
+   "1": "blueprint",
+   "2": "landscape",
+   "3": "fluted",
+   "4": "contour",
+   "5": "stipple",
+   "6": "grain",
+   "7": "grass"
+  }
+ }
 }
